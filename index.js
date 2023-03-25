@@ -49,6 +49,7 @@ const artistsData = [
   },
 ];
 
+// Get DOM elements
 const menuIcon = document.querySelector('#menu-btn');
 const closeBtn = document.querySelector('#close-btn');
 const overlay = document.querySelector('#overlay');
@@ -57,6 +58,7 @@ const viewAllBtn = document.querySelector('.see-more');
 const hideBtn = document.querySelector('.see-less');
 let browserWidth;
 
+// Event listener
 menuIcon.addEventListener('click', () => {
   overlay.style.display = 'block';
   menuIcon.style.visibility = 'hidden';
@@ -90,7 +92,7 @@ if (hideBtn) {
   });
 }
 
-// check screen to display list
+// check screen size on load to display list
 if (window.innerWidth !== undefined) {
   browserWidth = window.innerWidth;
 } else {
@@ -100,7 +102,7 @@ if (window.innerWidth !== undefined) {
 // Loop through dummy data to make web page page dynamic
 if (guestArtist) {
   for (let i = 0; i < artistsData.length; i += 1) {
-    // HTML Template for card in portfolio section
+    // HTML Template for card in the guest section
     const cardSection = `
         <div class="card-bg-img">
             <div class="card-img">
@@ -129,6 +131,7 @@ if (guestArtist) {
   }
 }
 
+// Load data dynamically on different screen
 window.addEventListener('resize', () => {
   let newBrowserWidth;
   // Loop through dummy data to make web page page dynamic
