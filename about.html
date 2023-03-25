@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Concert</title>
@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+     <!-- navigation and header section -->
     <section>
+        <!-- navigation -->
         <nav class="bg-white fixed-top">
+            <!-- top navbar -->
             <div class="navbar bg-gray d-flex-md justify-content-end ft-12">  
                 <ul class="d-flex gap-25">
                 <li>
@@ -37,14 +40,17 @@
                 </li>
                 </ul>
             </div>
+            <!-- navigation menu -->
             <div class="navigation d-flex bg-white align-content-center">
                 <div class="logo-menu d-flex align-content-center">
-                    <button id="menu-btn" class="navbar-toggler" type="button">
+                    <button type="button" id="menu-btn" class="navbar-toggler" >
                         <img class="menu" src="./images/menu.png" alt="menu">
                     </button>
-                    <a class="" id="logo" href="./index.html">
+                    <a class="menu-center" id="logo" href="./index.html">
                         <img class="logo" src="./images/logo.png" alt="logo">
                     </a>
+
+                    <!-- toggle menu for small screens -->
                     <span id="overlay" class="overlay">
                         <div class="d-flex close-menu">
                           <button id="close-btn" class=" close-btn faded-bg-blue" type="button">
@@ -74,8 +80,9 @@
                               </li>
                           </ul>
                         </div>
-                      </span> 
+                    </span> 
                 </div>  
+                <!-- navigation list -->
                 <div class="nav-list collapse d-flex-md justify-content-end" id="collapsibleNavbar">
                     <ul class="navbar-nav  justify-content-evenly d-flex gap-65">
                         <li class="d-flex">
@@ -100,12 +107,12 @@
                 </div>
             </div>
         </nav>
-
-        <div class="about-hero">
+        <!-- about hero section -->
+        <header class="about-hero">
             <div class="about-container px-p14 px-16 d-flex flex-col align-items-f-start">
                 <div class="about-title bg-text-about text-orange align-self-center">
                     <div class="d-flex flex-col">
-                        <h1 class="align-self-center">
+                        <h1 class="about-text align-self-center">
                             Dance with the Rhythm<br>
                             <span>Immerse with the melody</span><br>
                         </h1>
@@ -138,8 +145,11 @@
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
             </div>
-        </div>
+        </header>
     </section>
+    <!-- navigation and header section ends here -->
+
+     <!-- about page cta section -->
     <section>
         <div class="about-cta-sect d-flex justify-content-ctr px-p14 px-16 bg-white">
             <div class="about-cta d-flex flex-col align-items-f-start">
@@ -164,7 +174,9 @@
             </div>
         </div>
     </section> 
-
+     <!-- index page cta section ends here -->
+    
+     <!-- past event section -->
     <section>
         <div class="past-event d-flex justify-content-ctr px-p14 px-16">
             <div class="past-event-container d-flex flex-col align-items-f-start ">
@@ -182,24 +194,25 @@
                     </p>
                 </div> 
                 <div class="align-self-center">
-                    <div class="past-event-img-cont d-flex flex-row-md-col-sm" style="width: 100%;">
-                        <!-- <div class="past-event-img">
+                    <div class="past-event-img-cont d-flex flex-row-md-col-sm">
+                        <div class="past-event-img">
                             <img src="./images/event1.png" alt="event1">
                         </div>
-                       <div>
-                        <img class="past-event-img" src="./images/event2.png" alt="event2">
-                       </div> -->
+                       <div class="past-event-img">
+                         <img class="" src="./images/event2.png" alt="event2">
+                       </div>
                     </div>
                 </div>
             </div>
         </div>
     </section> 
+    <!-- past event section ends here -->
 
     <!-- footer  section start here -->
     <footer>
         <div class="footer d-flex justify-content-btw bg-dark-black">
             <div class="footer-logo align-self-center text-white">
-                <img src="./images/footer-logo.png" alt="footer-logo" >
+                <img src="./images/footer-logo2.png" alt="footer-logo" >
             </div>
             <div class="footer-content align-self-center text-white">
                 <h6>2015 Creative Commons Korea. Some Rights Reserved.</h6>
@@ -211,6 +224,8 @@
         </div>
     </footer>
     <!-- footer ends here -->
+    
+    <!-- javascript -->
     <script src="./index.js" async="true"></script>
 </body>
 </html>
