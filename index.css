@@ -197,9 +197,9 @@ h2 {
   padding-bottom: 30px;
 }
 
-.card {
-  flex-basis: 0;
-}
+/* .card {
+  flex-basis: none;
+} */
 
 .card-bg-img {
   background: url(./images/checkers.png) no-repeat;
