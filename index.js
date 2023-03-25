@@ -1,50 +1,50 @@
 const artistsData = [
   {
     id: 1,
-    name: 'P Square',
-    title: 'Lopre sum fantiel lovrem datu',
+    name: 'Asake',
+    title: 'Joha Master',
     about:
-      'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame',
-    imgUrl: './images/p-square.jpeg',
+      'Ahmed Ololade, known professionally as Asake, is a Nigerian Afrobeats singer and songwriter. He is signed to YBNL Nation and Empire Distribution. His stage name pays homage to his mother, whose first name is Asake.',
+    imgUrl: './images/asake.jpg',
   },
   {
     id: 2,
     name: 'P Square',
-    title: 'Lopre sum fantiel lovrem datu',
+    title: 'Rude Boy',
     about:
-      'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame',
+      'P-Square is a Nigerian musical duo consisting of the twin brothers Peter Okoye and Paul Okoye. They produced and released their albums through Square Records. In December 2011, they signed a record deal with Akons Konvict Muzik label.',
     imgUrl: './images/p-square.jpeg',
   },
   {
     id: 3,
-    name: 'P Square',
-    title: 'Lopre sum fantiel lovrem datu',
+    name: 'Burna Boy',
+    title: 'The Breakfast Cronner',
     about:
-      'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame',
-    imgUrl: './images/p-square.jpeg',
+      'Damini Ebunoluwa Ogulu MFR, known professionally as Burna Boy, is a Nigerian singer, songwriter and record producer. He rose to stardom in 2012 after releasing "Like to Party", the lead single from his debut studio album L.I.F.E.',
+    imgUrl: './images/burna.jpg',
   },
   {
     id: 4,
-    name: 'P Square',
-    title: 'Lopre sum fantiel lovrem datu',
+    name: 'Kizz Daniel',
+    title: 'Buga , RTID',
     about:
-      'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame',
-    imgUrl: './images/p-square.jpeg',
+      'Oluwatobiloba Daniel Anidugbe, better known by his stage name Kizz Daniel, is a Nigerian singer and songwriter. He rose to fame in 2014 with his debut single, "Woju".',
+    imgUrl: './images/vadoo.jpeg',
   },
   {
     id: 5,
-    name: 'P Square',
-    title: 'Lopre sum fantiel lovrem datu',
+    name: 'Ayra Star',
+    title: 'Sability Crooner',
     about:
-      'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame',
-    imgUrl: './images/p-square.jpeg',
+      'Oyinkansola Sarah Aderibigbe, known professionally as Ayra Starr, is a Beninese-born Nigerian singer. She began a fashion career at the age of 16 with Quove Model Management before deciding to pursue a career in music.',
+    imgUrl: './images/ayra.jpeg',
   },
   {
     id: 6,
-    name: 'P Square',
-    title: 'Lopre sum fantiel lovrem datu',
+    name: 'Buju',
+    title: 'Gwagawalada',
     about:
-      'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame',
+      'Daniel Benson, known professionally as Bnxn and formerly known as Buju, is a Nigerian Afro-fusion singer, songwriter and record producer',
     imgUrl: './images/p-square.jpeg',
   },
 ];
@@ -124,10 +124,13 @@ if (guestArtist) {
     const card = document.createElement('div');
     if ((i >= 2) && (browserWidth < 768)) {
       card.classList.add('hide');
+      card.innerHTML = cardSection;
+      guestArtist.appendChild(card);
+    } else {
+      card.classList.add('card', 'd-flex');
+      card.innerHTML = cardSection;
+      guestArtist.appendChild(card);
     }
-    card.classList.add('card');
-    card.innerHTML = cardSection;
-    guestArtist.appendChild(card);
   }
 }
 
@@ -168,10 +171,13 @@ window.addEventListener('resize', () => {
       // const way = newBrowserWidth;
       if ((newBrowserWidth < 768) && (i >= 2)) {
         card.classList.add('hide');
+        card.innerHTML = cardSection;
+        guestArtist.appendChild(card);
+      } else {
+        card.classList.add('card', 'd-flex');
+        card.innerHTML = cardSection;
+        guestArtist.appendChild(card);
       }
-      card.classList.add('card');
-      card.innerHTML = cardSection;
-      guestArtist.appendChild(card);
     }
   }
 });
