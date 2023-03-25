@@ -97,11 +97,52 @@ if (window.innerWidth !== undefined) {
   browserWidth = document.documentElement.clientWidth;
 }
 
-function getGuestArtist() {
+// Loop through dummy data to make web page page dynamic
+if (guestArtist) {
+  for (let i = 0; i < artistsData.length; i += 1) {
+    // HTML Template for card in portfolio section
+    const cardSection = `
+        <div class="card-bg-img">
+            <div class="card-img">
+                <img src="${artistsData[i].imgUrl}" alt="guest">
+            </div>
+        </div>
+        <div class="card-details">
+            <h3 class="card-name ft-24">${artistsData[i].name}</h3>
+            <div class="card-title">${artistsData[i].title}</div>
+            <hr class="card-breaker">
+            <div class="card-info">
+                <p>
+                  ${artistsData[i].about}
+                </p>
+            </div>
+        </div>
+  `;
+    // Create html tags and Append to the project section
+    const card = document.createElement('div');
+    if ((i >= 2) && (browserWidth < 768)) {
+      card.classList.add('hide');
+    }
+    card.classList.add('card');
+    card.innerHTML = cardSection;
+    guestArtist.appendChild(card);
+  }
+}
+
+window.addEventListener('resize', () => {
+  let newBrowserWidth;
   // Loop through dummy data to make web page page dynamic
   if (guestArtist) {
+    if (window.innerWidth !== undefined) {
+      newBrowserWidth = window.innerWidth;
+    } else {
+      newBrowserWidth = document.documentElement.clientWidth;
+    }
+
+    while (guestArtist.hasChildNodes()) {
+      guestArtist.removeChild(guestArtist.firstChild);
+    }
     for (let i = 0; i < artistsData.length; i += 1) {
-      // HTML Template for card in portfolio section
       const cardSection = `
         <div class="card-bg-img">
             <div class="card-img">
@@ -121,16 +162,13 @@ function getGuestArtist() {
   `;
       // Create html tags and Append to the project section
       const card = document.createElement('div');
-      if (i >= 2 && browserWidth < 768) {
+      // const way = newBrowserWidth;
+      if ((newBrowserWidth < 768) && (i >= 2)) {
         card.classList.add('hide');
       }
-      card.classList.add('card', 'd-flex');
+      card.classList.add('card');
       card.innerHTML = cardSection;
       guestArtist.appendChild(card);
     }
   }
-}
-
-window.addEventListener('resize', getGuestArtist);
-
-window.addEventListener('load', getGuestArtist);
+});
