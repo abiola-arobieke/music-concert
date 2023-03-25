@@ -1,234 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Concert</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-     <!-- navigation and header section -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- navigation and header section -->
     <section>
-        <!-- navigation -->
-        <nav class="bg-white fixed-top">
-            <!-- top navbar -->
-            <div class="navbar bg-gray d-flex-md justify-content-end ft-12">  
-                <ul class="d-flex gap-25">
-                <li>
-                    <a href="#">
-                        <img class="social-icon" src="./images/facebook-icon.png" alt="facebook-icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img class="social-icon" src="./images/twitter-icon.png" alt="twitter-icon">
-                    </a>
-                </li>
-                <li>
-                    <a class="text-white ft-12"  href="#">English</a>
-                </li>
-                <li>
-                    <a class="text-white ft-12" href="#">My page</a>
-                </li>
-                <li>
-                    <a class="text-white ft-12" href="#">Log out</a>
-                </li>
-                </ul>
-            </div>
-            <!-- navigation menu -->
-            <div class="navigation d-flex bg-white align-content-center">
-                <div class="logo-menu d-flex align-content-center">
-                    <button type="button" id="menu-btn" class="navbar-toggler" >
-                        <img class="menu" src="./images/menu.png" alt="menu">
-                    </button>
-                    <a class="menu-center" id="logo" href="./index.html">
-                        <img class="logo" src="./images/logo.png" alt="logo">
-                    </a>
+      <!-- navigation -->
+      <nav class="bg-white fixed-top">
+        <!-- top navbar -->
+        <div class="navbar bg-gray d-flex-md justify-content-end ft-12">
+          <ul class="d-flex gap-25 list-style-n">
+            <li class="d-flex align-content-center">
+              <a class="align-self-center" href="#">
+                <img
+                  class="social-icon align-self-center"
+                  src="./images/facebook-icon.png"
+                  alt="facebook-icon"
+                />
+              </a>
+            </li>
+            <li class="d-flex align-content-center">
+              <a href="#" class="align-self-center">
+                <img
+                  class="social-icon"
+                  src="./images/twitter-icon.png"
+                  alt="twitter-icon"
+                />
+              </a>
+            </li>
+            <li class="d-flex align-content-center">
+              <a class="align-self-center text-white ft-12" href="#">English</a>
+            </li>
+            <li class="d-flex align-content-center">
+              <a class="align-self-center text-white ft-12" href="#">My page</a>
+            </li>
+            <li class="d-flex align-content-center">
+              <a class="align-self-center text-white ft-12" href="#">Log out</a>
+            </li>
+          </ul>
+        </div>
+        <!-- navigation menu -->
+        <div class="navigation d-flex bg-white align-content-center">
+          <div class="logo-menu d-flex align-content-center">
+            <button type="button" id="menu-btn" class="navbar-toggler">
+              <img class="menu" src="./images/menu.png" alt="menu" />
+            </button>
+            <a class="menu-center" id="logo" href="./index.html">
+              <img class="logo" src="./images/logo.png" alt="logo" />
+            </a>
 
-                    <!-- toggle menu for small screens -->
-                    <span id="overlay" class="overlay">
-                        <div class="d-flex close-menu">
-                          <button id="close-btn" class=" close-btn faded-bg-blue" type="button">
-                            <img
-                              class=" menu-img"
-                              src="./images/cancel.svg"
-                              alt="close"
-                            />
-                          </button>
-                        </div>
-                        <div>
-                          <ul class="list-style-n d-flex flex-col nav-menu align-items-f-start">
-                            <li class="align-self-center">
-                              <a class="text-white nav-item" href="./about.html">About</a>
-                            </li>
-                            <li class="align-self-center">
-                              <a class="text-white nav-item" href="#">Program</a>
-                            </li>
-                            <li class="align-self-center">
-                              <a class="text-white nav-item" href="#">Sponsor</a>
-                            </li>
-                            <li class="align-self-center">
-                                <a class="text-white nav-item" href="#">Join</a>
-                              </li>
-                              <li class="align-self-center">
-                                <a class="text-white nav-item" href="#">News</a>
-                              </li>
-                          </ul>
-                        </div>
-                    </span> 
-                </div>  
-                <!-- navigation list -->
-                <div class="nav-list collapse d-flex-md justify-content-end" id="collapsibleNavbar">
-                    <ul class="navbar-nav  justify-content-evenly d-flex gap-65">
-                        <li class="d-flex">
-                            <a class="nav-item align-self-center text-gray ft-14" href="./about.html">About</a>
-                        </li>
-                        <li class="d-flex">
-                            <a class="nav-item align-self-center text-gray ft-14" href="#">Program</a>
-                        </li>
-                        <li class="d-flex">
-                            <a class="nav-item align-self-center text-gray ft-14" href="#">Join</a>
-                        </li>
-                        <li class="d-flex">
-                            <a class="nav-item align-self-center text-gray ft-14" href="#">Sponsor</a>
-                        </li>  
-                        <li class="d-flex">
-                            <a class="nav-item align-self-center text-gray ft-14" href="#">News</a>
-                        </li> 
-                    </ul>
-                    <div class="nav-item-focus">
-                        <a class="nav-link text-orange ft-14" href="#">CC campaign</a>
-                    </div> 
-                </div>
+            <!-- toggle menu for small screens -->
+            <span id="overlay" class="overlay">
+              <div class="d-flex close-menu">
+                <button
+                  id="close-btn"
+                  class="close-btn faded-bg-blue"
+                  type="button"
+                >
+                  <img class="menu-img" src="./images/cancel.svg" alt="close" />
+                </button>
+              </div>
+              <div>
+                <ul
+                  class="list-style-n d-flex flex-col nav-menu align-items-f-start"
+                >
+                  <li class="align-self-center">
+                    <a class="text-white nav-item" href="./about.html">About</a>
+                  </li>
+                  <li class="align-self-center">
+                    <a class="text-white nav-item" href="#">Program</a>
+                  </li>
+                  <li class="align-self-center">
+                    <a class="text-white nav-item" href="#">Sponsor</a>
+                  </li>
+                  <li class="align-self-center">
+                    <a class="text-white nav-item" href="#">Join</a>
+                  </li>
+                  <li class="align-self-center">
+                    <a class="text-white nav-item" href="#">News</a>
+                  </li>
+                </ul>
+              </div>
+            </span>
+          </div>
+          <!-- navigation list -->
+          <div
+            class="nav-list collapse d-flex-md justify-content-end"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav justify-content-evenly d-flex gap-65">
+              <li class="d-flex">
+                <a
+                  class="nav-item align-self-center text-gray ft-14"
+                  href="./about.html"
+                  >About</a
+                >
+              </li>
+              <li class="d-flex">
+                <a class="nav-item align-self-center text-gray ft-14" href="#"
+                  >Program</a
+                >
+              </li>
+              <li class="d-flex">
+                <a class="nav-item align-self-center text-gray ft-14" href="#"
+                  >Join</a
+                >
+              </li>
+              <li class="d-flex">
+                <a class="nav-item align-self-center text-gray ft-14" href="#"
+                  >Sponsor</a
+                >
+              </li>
+              <li class="d-flex">
+                <a class="nav-item align-self-center text-gray ft-14" href="#"
+                  >News</a
+                >
+              </li>
+            </ul>
+            <div class="nav-item-focus">
+              <a class="nav-link text-orange ft-14" href="#">CC campaign</a>
             </div>
-        </nav>
-        <!-- about hero section -->
-        <header class="about-hero">
-            <div class="about-container px-p14 px-16 d-flex flex-col align-items-f-start">
-                <div class="about-title bg-text-about text-orange align-self-center">
-                    <div class="d-flex flex-col">
-                        <h1 class="about-text align-self-center">
-                            Afro Revolution<br>
-                            <span>Top Musical Concert TO witness </span><br>
-                        </h1>
-                        <hr class="about-hero-ln align-self-center"> 
-                    </div>
-                </div>
-                <div class="about-description align-self-center text-black">
-                    <p>
-                        Adekunle Gold – Sensational singer, Adekunle Gold will be treating his fans to beautiful 
-                        pieces of music at his ‘Catch Me If You Can’ concert in Lagos.
-                    </p>
-                    <p>
-                        On the same night, fans of “Buga” and “Odo” will be treated to some good music by Vadoo, Kizz Daniel.
-                        The sensational artist who has had a breakout year culminating in a global tour in 
-                        major cities around the world and a performance 
-                        at the opening of the FIFA World Cup in Qatar is set to bring the 
-                        Afroclassic experience to fans and the audience in Nigeria.
-                    </p>
-                    <p>
-                        Lagos will host one of the biggest artists in the country at the 2022 Afro Revolution. 
-                        Performing artistes include Kizz Daniel, Flavour, Fireboy DML, Portable, Terry G, Oritsefemi, Durella, 
-                        Mr Real, Candybleakz, Ladé, Jumabee, Tolibian
-                    </p>
-                </div>
-                <div class="about-message align-self-center text-gray-faded">
-                    Please contact us per Email for nay further questions about CC Global Summit 2015!
-                </div>
-                <div class="contact-email align-self-center">
-                    <span>
-                        <u>ccsummit2015@cckorea.org</u>
-                    </span>
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </div>
+          </div>
+        </div>
+      </nav>
+      <!-- about hero section -->
+      <header class="about-hero">
+        <div
+          class="about-container px-p14 px-16 d-flex flex-col align-items-f-start"
+        >
+          <div class="about-title bg-text-about text-orange align-self-center">
+            <div class="d-flex flex-col">
+              <h1 class="about-text align-self-center">
+                Afro Revolution<br />
+                <span>Top Musical Concert TO witness </span><br />
+              </h1>
+              <hr class="about-hero-ln align-self-center" />
             </div>
-        </header>
+          </div>
+          <div class="about-description align-self-center text-black">
+            <p>
+              Adekunle Gold – Sensational singer, Adekunle Gold will be treating
+              his fans to beautiful pieces of music at his ‘Catch Me If You Can’
+              concert in Lagos.
+            </p>
+            <p>
+              On the same night, fans of “Buga” and “Odo” will be treated to
+              some good music by Vadoo, Kizz Daniel. The sensational artist who
+              has had a breakout year culminating in a global tour in major
+              cities around the world and a performance at the opening of the
+              FIFA World Cup in Qatar is set to bring the Afroclassic experience
+              to fans and the audience in Nigeria.
+            </p>
+            <p>
+              Lagos will host one of the biggest artists in the country at the
+              2022 Afro Revolution. Performing artistes include Kizz Daniel,
+              Flavour, Fireboy DML, Portable, Terry G, Oritsefemi, Durella, Mr
+              Real, Candybleakz, Ladé, Jumabee, Tolibian
+            </p>
+          </div>
+          <div class="about-message align-self-center text-gray-faded">
+            Please contact us per Email for nay further questions about CC
+            Global Summit 2015!
+          </div>
+          <div class="contact-email align-self-center">
+            <span>
+              <u>ccsummit2015@cckorea.org</u>
+            </span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </div>
+        </div>
+      </header>
     </section>
     <!-- navigation and header section ends here -->
 
-     <!-- about page cta section -->
+    <!-- about page cta section -->
     <section>
-        <div class="about-cta-sect d-flex justify-content-ctr px-p14 px-16 bg-white">
-            <div class="about-cta d-flex flex-col align-items-f-start">
-                <div class="align-self-center">
-                    <div class=" d-flex flex-col">
-                        <h6 class="about-cta-title align-self-center">
-                            Cubana Musical Concert Lagos 2023
-                        </h6>
-                        <hr class="about-cta-line align-self-center"> 
-                    </div>
-                </div>
-                <div class="about-cta-msg align-self-center">
-                    <p>
-                        Mavin needs no introduction when it comes to having an all-star concert. For the first time in 10 years,
-                         the musical label will release a joint album and hold a Mavin All Star concert. 
-                        The concert will feature all Mavin acts such as Rema, Ladipoe, Ayra Starr, 
-                        Boy Spyce, Johnny Drille, Crayon and Bayanni 
-                    </p>
-                </div> 
-                <div class="about-cta-img align-self-center">
-                    <img src="./images/about-logo.png" alt="">
-                </div>
+      <div
+        class="about-cta-sect d-flex justify-content-ctr px-p14 px-16 bg-white"
+      >
+        <div class="about-cta d-flex flex-col align-items-f-start">
+          <div class="align-self-center">
+            <div class="d-flex flex-col">
+              <h6 class="about-cta-title align-self-center">
+                Cubana Musical Concert Lagos 2023
+              </h6>
+              <hr class="about-cta-line align-self-center" />
             </div>
+          </div>
+          <div class="about-cta-msg align-self-center">
+            <p>
+              Mavin needs no introduction when it comes to having an all-star
+              concert. For the first time in 10 years, the musical label will
+              release a joint album and hold a Mavin All Star concert. The
+              concert will feature all Mavin acts such as Rema, Ladipoe, Ayra
+              Starr, Boy Spyce, Johnny Drille, Crayon and Bayanni
+            </p>
+          </div>
+          <div class="about-cta-img align-self-center">
+            <img src="./images/about-logo.png" alt="" />
+          </div>
         </div>
-    </section> 
-     <!-- index page cta section ends here -->
-    
-     <!-- past event section -->
+      </div>
+    </section>
+    <!-- index page cta section ends here -->
+
+    <!-- past event section -->
     <section>
-        <div class="past-event d-flex justify-content-ctr px-p14 px-16">
-            <div class="past-event-container d-flex flex-col align-items-f-start ">
-                <div class="align-self-center">
-                    <div class="d-flex flex-col">
-                        <h6 class="past-event-title align-self-center">
-                            See the past Cubana Music Concert
-                        </h6>
-                        <hr class="past-event-ln align-self-center"> 
-                    </div>
-                </div>
-                <div class="past-event-info align-self-center">
-                    <p>Take a look at the past two Cubana Music Concert which took place
-                        in Abuja and Kaduna.
-                    </p>
-                </div> 
-                <div class="align-self-center">
-                    <div class="past-event-img-cont d-flex flex-row-md-col-sm">
-                        <div class="past-event-img">
-                            <img src="./images/event1.png" alt="event1">
-                        </div>
-                       <div class="past-event-img">
-                         <img class="" src="./images/event2.png" alt="event2">
-                       </div>
-                    </div>
-                </div>
+      <div class="past-event d-flex justify-content-ctr px-p14 px-16">
+        <div class="past-event-container d-flex flex-col align-items-f-start">
+          <div class="align-self-center">
+            <div class="d-flex flex-col">
+              <h6 class="past-event-title align-self-center">
+                See the past Cubana Music Concert
+              </h6>
+              <hr class="past-event-ln align-self-center" />
             </div>
+          </div>
+          <div class="past-event-info align-self-center">
+            <p>
+              Take a look at the past two Cubana Music Concert which took place
+              in Abuja and Kaduna.
+            </p>
+          </div>
+          <div class="align-self-center">
+            <div class="past-event-img-cont d-flex flex-row-md-col-sm">
+              <div class="past-event-img">
+                <img src="./images/event1.png" alt="event1" />
+              </div>
+              <div class="past-event-img">
+                <img class="" src="./images/event2.png" alt="event2" />
+              </div>
+            </div>
+          </div>
         </div>
-    </section> 
+      </div>
+    </section>
     <!-- past event section ends here -->
 
     <!-- footer  section start here -->
     <footer>
-        <div class="footer d-flex justify-content-btw bg-dark-black">
-            <div class="footer-logo align-self-center text-white">
-                <img src="./images/footer-logo2.png" alt="footer-logo" >
-            </div>
-            <div class="footer-content align-self-center text-white">
-                <h6>2015 Creative Commons Korea. Some Rights Reserved.</h6>
-                <p>
-                    달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다.
-                    자세한 이용기능 내용과 허락조건은 http://creativecommons.org/licences/by/2.0/kr 를 보세요.
-                </p>   
-            </div>
+      <div class="footer d-flex justify-content-btw bg-dark-black">
+        <div class="footer-logo align-self-center text-white">
+          <img src="./images/footer-logo2.png" alt="footer-logo" />
         </div>
+        <div class="footer-content align-self-center text-white">
+          <h6>2015 Creative Commons Korea. Some Rights Reserved.</h6>
+          <p>
+            달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈
+            저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다. 자세한
+            이용기능 내용과 허락조건은
+            http://creativecommons.org/licences/by/2.0/kr 를 보세요.
+          </p>
+        </div>
+      </div>
     </footer>
     <!-- footer ends here -->
 
     <!-- javascript -->
     <script src="./index.js" async="true"></script>
-</body>
+  </body>
 </html>
