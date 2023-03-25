@@ -355,7 +355,7 @@ h2 {
 /* about section */
 .about-hero {
   background: url(./images/bg-about-mobile.png) no-repeat !important;
-  background-position: top 0 right 0 !important;
+  background-position: top 65px right 0 !important;
   background-color: #f7f7f8 !important;
   background-size: contain !important;
   margin-top: 6%;
