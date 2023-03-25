@@ -345,11 +345,11 @@ h2 {
 }
 
 .hide-sm {
-    display: none;
+  display: none;
 }
 
 .show-sm {
-    display: block;
+  display: block;
 }
 
 /* about section */
@@ -627,8 +627,8 @@ h2 {
 }
 
 .px-20 {
-    padding: 0 20.5px !important;
-  }
+  padding: 0 20.5px !important;
+}
 
 .text-gray {
   color: #868686;
