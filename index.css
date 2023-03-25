@@ -610,6 +610,14 @@ h2 {
   background-color: #f2f2f2;
 }
 
+.footer-bg {
+  background-color: #f2f2f2;
+}
+
+.footer-text {
+  color: #3b3e45;
+}
+
 .bg-off-white {
   background-color: #f8f8f8;
 }
@@ -1065,5 +1073,13 @@ h2 {
 
   .show-sm {
     display: none;
+  }
+
+  .footer-bg {
+    background-color: #2e2e2e;
+  }
+
+  .footer-text {
+    color: #f2f2f2;
   }
 }
