@@ -738,6 +738,8 @@ h2 {
   .navbar {
     /* padding: 0 15%; */
     padding-right: 10%;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 
   .navigation {
