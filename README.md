@@ -43,7 +43,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Pop Up Window**
+- **Fetch Data Dynamically**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
